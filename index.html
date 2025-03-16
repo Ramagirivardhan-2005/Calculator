@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        div{
+            
+            padding: 10px;
+            display: inline-block;
+            justify-items: center;
+            align-items: center;
+            background-color: rgb(10, 7, 7);
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+        
+        }
+        .display{
+            background-color: #f2f2f2;
+            margin-top:30px ;
+            width: 276px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            color: #333;
+            justify-content: end;
+            text-align: end;
+            font-weight: bold;
+            font-size: larger;
+            
+
+        }
+        .butn{
+            margin: 10px;
+            width: 300px;
+        }
+        .Ans{
+            width: 170px;
+        }
+        button{          
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 3px;
+            font-weight: bolder;
+            font-size: medium;
+            overflow: auto;
+            transition: background-color 0.2s;
+        }
+        button:hover{
+            opacity: 0.5;
+            color:blue
+        }
+        h1{
+            padding: 1rem;
+            color: aliceblue;
+            margin-right: 150px;
+        }
+        .Ac{
+            width:111px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Calculator</h1>
+    <div class="display"></div>
+    <div class="butn">
+        <button class="Ac" id="Alcl">AC</button>
+        <button class="c" id="cl">C</button>
+        <button class="sqt" id="sqrt">√</button>
+        <button class="power" id="powe">^</button>
+        <button class="ln" id="logo">log</button>
+        <button class="exp" id="expo">exp</button>
+        <button class="log" id="lnn"> ln</button>
+        <button class="brack1"id="brack11">(</button>
+        <button class="brack2" id="brack22">)</button>
+        <button class="one" id="1">1</button>
+        <button class="two" id="2">2</button>
+        <button class="three" id="3">3</button>
+        <button class="div" id="divi">÷</button>
+        <button class="per"id="per" >%</button>
+        <button class="four"id="4">4</button>
+        <button class="five" id="5">5</button>
+        <button class="six"id="6">6</button>
+        <button class="sub" id="subt">-</button>
+        <button class="mul"id="multi">x</button>
+        <button class="seven"id="7">7</button>
+        <button class="eight"id="8">8</button>
+        <button class="nine"id="9">9</button>
+        <button class="pi"id="pii">π</button>
+        <button class="add"id="addi"> +</button>
+        <button class="dot"id="dotu">.</button>
+        <button class="zero"id="zeroo">0</button>
+        <button class="Ans"id="anss">Ans</button>
+    </div>
+
+</div>
+<script src="cal.js"></script>
+</body>
+</html>
